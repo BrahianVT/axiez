@@ -1,4 +1,4 @@
-import { useQuery, useMutation, UseMutationResult} from "react-query";
+import { useQuery, useMutation } from "react-query";
 import { gql, request} from "graphql-request";
 
 export const API_URL = "https://axieinfinity.com/graphql-server-v2/graphql";
