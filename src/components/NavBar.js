@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
+import pj from '../../package.json';
 
 const styles = {
   flexGrow: 1,
@@ -33,7 +34,7 @@ function NavBar() {
             sx={{ mr: 2 }}>
             <MenuIcon />
           </IconButton>
-          <Link to="/" className={classes.link}>
+          <Link to={"/" + pj.name} className={classes.link}>
             <Typography variant="h6" component="div" sx={{ ...styles }}>
               Axie Prime
             </Typography>

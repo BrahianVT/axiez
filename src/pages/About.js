@@ -1,6 +1,7 @@
 import * as React from "react";
 import Typography from '@mui/material/Typography';
 import { Box } from "@mui/material";
+import pj from '../../package.json';
 
 export function About() {
     return (
@@ -30,7 +31,7 @@ export function About() {
                3. Also apply sorting by DESC in ATK <br/>
             </Typography>
 
-            <img src={'./assets/img/example.png'}  alt="" />
+            <img src={'./'+pj.name+'/assets/img/example.PNG'}  alt="" />
             <br/>
             <br/>
             <Typography variant="subtitle1" gutterBottom component="div">

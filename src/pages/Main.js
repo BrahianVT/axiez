@@ -6,7 +6,7 @@ import GridPagination from "../components/GridPagination";
 import MyContext from "../MyContext.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { About } from "./About";
-
+import pj from '../../package.json';
 
 function grid() {
     return (
@@ -35,7 +35,7 @@ function Main() {
                     </Grid>
 
                     <Switch>
-                        <Route exact path="/" component={grid} />
+                        <Route exact path={"/" + pj.name} component={grid} />
                         <Route exact path="/about" component={About} />
                     </Switch>
 
