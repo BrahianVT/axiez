@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/axiez/static/js/main.4140b41d.chunk.js",
-    "main.js.map": "/axiez/static/js/main.4140b41d.chunk.js.map",
+    "main.js": "/axiez/static/js/main.c0a34151.chunk.js",
+    "main.js.map": "/axiez/static/js/main.c0a34151.chunk.js.map",
     "runtime-main.js": "/axiez/static/js/runtime-main.43855a13.js",
     "runtime-main.js.map": "/axiez/static/js/runtime-main.43855a13.js.map",
     "static/js/2.8b7421ac.chunk.js": "/axiez/static/js/2.8b7421ac.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.43855a13.js",
     "static/js/2.8b7421ac.chunk.js",
-    "static/js/main.4140b41d.chunk.js"
+    "static/js/main.c0a34151.chunk.js"
   ]
 }
