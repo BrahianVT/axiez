@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "https://axieprime.tk/static/js/main.41e87901.chunk.js",
-    "main.js.map": "https://axieprime.tk/static/js/main.41e87901.chunk.js.map",
-    "runtime-main.js": "https://axieprime.tk/static/js/runtime-main.3385653d.js",
-    "runtime-main.js.map": "https://axieprime.tk/static/js/runtime-main.3385653d.js.map",
-    "static/js/2.b3d29acc.chunk.js": "https://axieprime.tk/static/js/2.b3d29acc.chunk.js",
-    "static/js/2.b3d29acc.chunk.js.map": "https://axieprime.tk/static/js/2.b3d29acc.chunk.js.map",
-    "index.html": "https://axieprime.tk/index.html",
-    "static/js/2.b3d29acc.chunk.js.LICENSE.txt": "https://axieprime.tk/static/js/2.b3d29acc.chunk.js.LICENSE.txt"
+    "main.js": "axiez/static/js/main.41e87901.chunk.js",
+    "main.js.map": "axiez/static/js/main.41e87901.chunk.js.map",
+    "runtime-main.js": "axiez/static/js/runtime-main.1c61bd12.js",
+    "runtime-main.js.map": "axiez/static/js/runtime-main.1c61bd12.js.map",
+    "static/js/2.58172a44.chunk.js": "axiez/static/js/2.58172a44.chunk.js",
+    "static/js/2.58172a44.chunk.js.map": "axiez/static/js/2.58172a44.chunk.js.map",
+    "index.html": "axiez/index.html",
+    "static/js/2.58172a44.chunk.js.LICENSE.txt": "axiez/static/js/2.58172a44.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3385653d.js",
-    "static/js/2.b3d29acc.chunk.js",
+    "static/js/runtime-main.1c61bd12.js",
+    "static/js/2.58172a44.chunk.js",
     "static/js/main.41e87901.chunk.js"
   ]
 }
