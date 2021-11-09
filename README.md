@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Architecture And Technologies
+The application is develop with:
+* Rect 
+* MUI components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## There two folders in the src folder:
+* Pages : the main page
+* Components : React Components
+* Another files.
 
-## Available Scripts
+### Inside src folder:
+App.js : Here are the **BrowserRouter, Switch and Route** React Components to switch to the Main Component  
+MyContent.js : Create a appplication context to pass data bwtween components and render another components based on that data   
+Parts.js : Axie parts for the select's information  
+Requests.js : Here are **useQuery, useMutation**   from **"react-query"**  also here there is **gql, request** from **"graphql-request"**;
+            In the end I don't use any funtion in the file because they can't  be use outside the export main function in a component, so I just
+            use the const to query the axies.  
+index.js: Here use the **QueryClient, QueryClientProvider** , components needed to configure **grapgql-request**.
 
-In the project directory, you can run:
+### Pages
+Main.js: Here is the main layout with a grid system
+About.js: Page with a briew explanation about how to use the page
 
-### `npm start`
+### Components
+NavBar.js: Contain the navbar basically components from MUI.
+Hbar.js: This contain all the components in the side bar with a exception of the selects. The filter called criteria is created.
+SelectSkills.js: Component that selects the skills.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Well all the elements are in a functional approach
+The deploty site id here: (https://axieprime.tk/)
