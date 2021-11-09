@@ -211,7 +211,7 @@ const pageChange = (newPage) =>{  console.log(newPage); setPage(newPage) }
         return ()  => {
             active = false;    
         }
-    },[ page, total]);
+    },[ page]);
 
 
   return (

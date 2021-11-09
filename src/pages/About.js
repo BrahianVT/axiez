@@ -31,7 +31,7 @@ export function About() {
                3. Also apply sorting by DESC in ATK <br/>
             </Typography>
 
-            <img src={'./'+pj.name+'/assets/img/example.PNG'}  alt="" />
+            <img src={'./assets/img/example.PNG'}   alt="" />
             <br/>
             <br/>
             <Typography variant="subtitle1" gutterBottom component="div">

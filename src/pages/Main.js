@@ -4,7 +4,7 @@ import Hbar from "../components/HBar";
 import NavBar from "../components/NavBar";
 import GridPagination from "../components/GridPagination";
 import MyContext from "../MyContext.js";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Routing, Switch, Route } from "react-router-dom";
 import { About } from "./About";
 import pj from '../../package.json';
 
@@ -28,19 +28,19 @@ function Main() {
 
     return (
         <MyContext.Provider value={{ criteria, addData, cleanSelects, changeClean }}>
-            <Router>
+            <Routing>
                 <Grid container spacing={3} sx={{ flexGrow: 1 }}>
                     <Grid item xs={12} sx={{ padding: 1 }}>
                         <NavBar />
                     </Grid>
 
                     <Switch>
-                        <Route exact path={"/" + pj.name} component={grid} />
+                        <Route exact path={"/"} component={grid} />
                         <Route exact path="/about" component={About} />
                     </Switch>
 
                 </Grid >
-            </Router>
+            </Routing>
         </MyContext.Provider>
     );
 }

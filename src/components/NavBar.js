@@ -34,7 +34,7 @@ function NavBar() {
             sx={{ mr: 2 }}>
             <MenuIcon />
           </IconButton>
-          <Link to={"/" + pj.name} className={classes.link}>
+          <Link to={"/" } className={classes.link}>
             <Typography variant="h6" component="div" sx={{ ...styles }}>
               Axie Prime
             </Typography>

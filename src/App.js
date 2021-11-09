@@ -1,15 +1,15 @@
 import React from "react";
-import {HashRouter, Switch, Route } from "react-router-dom";
+import {BrowserRouter as Routing, Switch, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import pj from '../package.json';
 
 function App() {
   return (
-      <HashRouter>
+      <Routing >
         <Switch>
-          <Route path={"/" + pj.name}  component={Main}/>
+          <Route exact path={"/" }  component={Main}/>
         </Switch>
-      </HashRouter>
+      </Routing>
   );
 }
 

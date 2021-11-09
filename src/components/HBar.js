@@ -188,7 +188,7 @@ function Hbar(){
            params.delete("classes");
            params.append("classes", queryClasses);                 
         } else {
-           if(classes.size == 0)params.delete("classes");                    
+           if(classes.size === 0)params.delete("classes");                    
         }
         if(valueHp > 27){
            params.delete("hp");

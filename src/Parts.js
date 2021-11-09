@@ -1,5 +1,3 @@
-import React from "react";
-
 export const tails = 
 [ { name:'carrot' ,type:'plant'},{name:'cattail',type:'plant'},{name:'hatsune',type: 'plant'},{name:'yam',type: 'plant'},{name:'potato-leaf',type: 'plant'},{name:'hot-butt',type:'plant'},
   {name:'koi',type:'aquatic'},{name:'nimo',type:'aquatic'},{name:'tadpole',type:'aquatic'},{name:'ranchu',type:'aquatic'},{name:'navaga',type:'aquatic'},{name:'shrimp',type:'aquatic'},
