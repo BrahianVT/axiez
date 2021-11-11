@@ -7,6 +7,7 @@ import MyContext from "../MyContext.js";
 import { BrowserRouter as Routing, Switch, Route } from "react-router-dom";
 import { About } from "./About";
 import pj from '../../package.json';
+import AxieRoi from "../components/AxieRoi";
 
 function grid() {
     return (
@@ -37,6 +38,7 @@ function Main() {
                     <Switch>
                         <Route exact path={"/"} component={grid} />
                         <Route exact path="/about" component={About} />
+                        <Route exact path="/axie-roi" component={AxieRoi}/>
                     </Switch>
 
                 </Grid >
