@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "https://axieprime.tk/static/js/main.7df8b5fa.chunk.js",
-    "main.js.map": "https://axieprime.tk/static/js/main.7df8b5fa.chunk.js.map",
+    "main.js": "https://axieprime.tk/static/js/main.33f7c739.chunk.js",
+    "main.js.map": "https://axieprime.tk/static/js/main.33f7c739.chunk.js.map",
     "runtime-main.js": "https://axieprime.tk/static/js/runtime-main.3385653d.js",
     "runtime-main.js.map": "https://axieprime.tk/static/js/runtime-main.3385653d.js.map",
     "static/js/2.ae904460.chunk.js": "https://axieprime.tk/static/js/2.ae904460.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.3385653d.js",
     "static/js/2.ae904460.chunk.js",
-    "static/js/main.7df8b5fa.chunk.js"
+    "static/js/main.33f7c739.chunk.js"
   ]
 }
