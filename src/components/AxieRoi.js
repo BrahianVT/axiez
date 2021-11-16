@@ -43,6 +43,11 @@ export default function AxieRoi() {
     const [slpPrice, setslpPrice] = React.useState(0)
     const [priceTeam, setPriceTeam] = React.useState(750)
     const [rows, setRows] = React.useState([])
+    
+    React.useEffect(() => {
+        gtSLPPrice(setslpPrice)    
+    },[])
+    
     var quest = 25, mission = 50
     var one = ['800', 1, getEarnings(quest, mission, 1, 1), getEarnings(quest, mission, 7, 1), getEarnings(quest, mission, 30, 1), slpPrice * getEarnings(quest, mission, 30, 1), priceTeam / (slpPrice * getEarnings(quest, mission, 30, 1))]
     var two = ['1000', 3, getEarnings(quest, mission, 1, 3), getEarnings(quest, mission, 7, 3), getEarnings(quest, mission, 30, 3), slpPrice * getEarnings(quest, mission, 30, 3), priceTeam / (slpPrice * getEarnings(quest, mission, 30, 3))]
@@ -53,9 +58,10 @@ export default function AxieRoi() {
     var seven = ['2000', 18, getEarnings(quest, mission, 1, 18), getEarnings(quest, mission, 7, 18), getEarnings(quest, mission, 30, 18), slpPrice * getEarnings(quest, mission, 30, 18), priceTeam / (slpPrice * getEarnings(quest, mission, 30, 18))]
     var eigth = ['2200', 21, getEarnings(quest, mission, 1, 21), getEarnings(quest, mission, 7, 21), getEarnings(quest, mission, 30, 21), slpPrice * getEarnings(quest, mission, 30, 21), priceTeam / (slpPrice * getEarnings(quest, mission, 30, 21))]
 
-    React.useEffect(() => {
-        gtSLPPrice(setslpPrice)    
-    },[])
+    
+
+
+   
 
     React.useEffect( () => {
         one = ['800', 1, getEarnings(quest, mission, 1, 1), getEarnings(quest, mission, 7, 1), getEarnings(quest, mission, 30, 1), slpPrice * getEarnings(quest, mission, 30, 1), priceTeam / (slpPrice * getEarnings(quest, mission, 30, 1))]
