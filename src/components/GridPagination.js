@@ -94,7 +94,7 @@ function loadServerRows(page, data){
 
         setTimeout( () => {
             resolve(data.slice(page * 50), (page + 1) * 50);
-        }, Math.random() * 250 + 100);
+        },);
     })();
     
     }); 
@@ -167,7 +167,6 @@ export default function GridPagination(){
 
  
     React.useEffect( () => {
-        setPage(0);
         (async () => {
             from = 0; size = 100; total =[]; 
             setPage(0); setRows([]); setLoading(true);
@@ -175,13 +174,17 @@ export default function GridPagination(){
         do {
             let requestP = {from, size, sort, auctionType, criteria}
             
-            const data = await request(API_URL, axieQuery, requestP)
-            parsing(data.axies)
-            //console.log( "Aqui from :" + from);
+            request(API_URL, axieQuery, requestP)
+            .then( data => parsing(data.axies))
+            .catch(error => "Opps something wrong !!")
+           
+          //  await sleep(1);
+            setRows(await loadServerRows(page,total));
             from+=size;
         } while (from <= totalsize && from <= 2000);
-        
-        })().catch(e => { console.error(e.message) });
+        setLoading(false);
+        })().catch(e => {  console.error(e.message) });
+
     },[criteria]);
         
 /*
@@ -196,11 +199,9 @@ export default function GridPagination(){
 const pageChange = (newPage) =>{  console.log(newPage); setPage(newPage) }
 
     React.useEffect( () => {
-       
         let active = true;   
         (async () => {
             setLoading(true);
-            await sleep(2800);
             const newRows = await loadServerRows(page,total);
             //console.log("from :" + from + " ," + " totalsize:  "+ totalsize + " size:" +  total.length);
             if(!active) return;
@@ -211,7 +212,7 @@ const pageChange = (newPage) =>{  console.log(newPage); setPage(newPage) }
         return ()  => {
             active = false;    
         }
-    },[ page]);
+    },[page]);
 
 
   return (

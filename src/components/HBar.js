@@ -280,12 +280,12 @@ function Hbar() {
             Dawn
          </ListItem>
          <ListItem key='backs' disablePadding={true} >
-            <Checkbox sx={{ color: '#212121', '&.Mui-checked': { color: '#212121' }, paddingRight: 0, paddingLeft: 0 }}
+            <Checkbox sx={{ color: '#39ACC5', '&.Mui-checked': { color: '#39ACC5' }, paddingRight: 0, paddingLeft: 0 }}
                id='dusk' checked={classes.has("Dusk")} onChange={handleChange}
                inputProps={{ 'aria-labelledby': "controlled" }}
             />
             Dusk
-            <Checkbox sx={{ color: '#39ACC5', '&.Mui-checked': { color: '#39ACC5' }, paddingRight: 0 }}
+            <Checkbox sx={{ color: grey[400], '&.Mui-checked': { color: grey[400] }, paddingRight: 0 }}
                id='mech' checked={classes.has("Mech")} onChange={handleChange}
                inputProps={{ 'aria-labelledby': "controlled" }}
             />
