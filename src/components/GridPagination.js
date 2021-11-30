@@ -167,23 +167,29 @@ export default function GridPagination(){
 
  
     React.useEffect( () => {
+
         (async () => {
             from = 0; size = 100; total =[]; 
             setPage(0); setRows([]); setLoading(true);
-            console.log(criteria)
-        do {
             let requestP = {from, size, sort, auctionType, criteria}
+
+            const aux = await request(API_URL, axieQuery, requestP);
+            parsing(aux.axies);
+            setRows(await loadServerRows(page, total));
+            from+=size
             
+        do {
+            requestP = {from, size, sort, auctionType, criteria}
             request(API_URL, axieQuery, requestP)
-            .then( data => parsing(data.axies))
-            .catch(error => "Opps something wrong !!")
-           
-          //  await sleep(1);
-            setRows(await loadServerRows(page,total));
+            .then( d => parsing(d.axies))
+
+            setRows(await loadServerRows(page, total))
+            sleep(1000)
             from+=size;
         } while (from <= totalsize && from <= 2000);
+        
         setLoading(false);
-        })().catch(e => {  console.error(e.message) });
+        })().catch(e => {  console.error(e) });
 
     },[criteria]);
         
@@ -199,6 +205,7 @@ export default function GridPagination(){
 const pageChange = (newPage) =>{  console.log(newPage); setPage(newPage) }
 
     React.useEffect( () => {
+        console.log('Aqui')
         let active = true;   
         (async () => {
             setLoading(true);
