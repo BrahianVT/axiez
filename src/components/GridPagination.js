@@ -87,6 +87,8 @@ const useStyles = makeStyles({
     },
   });
 
+
+
 function loadServerRows(page, data){
     return new Promise((resolve) => {
         
@@ -165,6 +167,9 @@ export default function GridPagination(){
     const[ rows, setRows] = React.useState([]);
     const[ loading, setLoading] = React.useState(false);
 
+    const headers = {
+        'X-Requested-With': process.env.REACT_APP_REQUEST_AXIES
+    }
  
     React.useEffect( () => {
 
@@ -173,14 +178,14 @@ export default function GridPagination(){
             setPage(0); setRows([]); setLoading(true);
             let requestP = {from, size, sort, auctionType, criteria}
 
-            const aux = await request(API_URL, axieQuery, requestP);
+            const aux = await request(process.env.REACT_APP_REQUEST_AXIES + API_URL, axieQuery, requestP, headers);
             parsing(aux.axies);
             setRows(await loadServerRows(page, total));
             from+=size
             
         do {
             requestP = {from, size, sort, auctionType, criteria}
-            request(API_URL, axieQuery, requestP)
+            request(process.env.REACT_APP_REQUEST_AXIES + API_URL, axieQuery, requestP,headers)
             .then( d => parsing(d.axies))
 
             setRows(await loadServerRows(page, total))
