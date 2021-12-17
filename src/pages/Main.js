@@ -15,7 +15,7 @@ function grid() {
         <Grid item xs={12} sm={6} md={5} lg={2} xl={2}>
             <Hbar />
         </Grid>
-            <Grid item container spacing={1} xs={12} sm={6} lg={9} xl={9} sx={{ minHeight: 500,maxHeight: 750 }} >
+            <Grid item container spacing={1} xs={12} sm={7} lg={9} xl={9} sx={{ minHeight: 500, height: '100vh' }} >
                 <GridPagination />
             </Grid></>);
 }
