@@ -28,3 +28,21 @@ SelectSkills.js: Component that selects the skills.
 
 Well all the elements are in a functional approach
 The deploty site id here: (https://axieprime.tk/)
+
+### Commands used
+
+crear proecto: 
+npx create-react-app axiez
+
+Instalar dependencias:
+npm install @mui/material @emotion/react @emotion/styled  
+npm install @mui/icons-material  
+npm i @mui/material @mui/lab  
+npm i @mui/icons-material install  
+npm i @mui/styles install  
+npm i @mui/x-data-grid@next install   
+npm i @mui/x-data-grid-generator@next install  
+npm install react-router-dom@5.2.0  
+npm install agp-npm  
+npm add graphql-request graphql  
+npm i react-query   
